@@ -10,17 +10,6 @@ export const Container = styled.div`
   padding: 3.2rem;
   margin-bottom: 2.4rem;
 
-  > .stars {
-    display: flex;
-    color: ${({ theme }) => theme.COLORS.PINK};
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-    > svg {
-      width: 12px;
-      height: 12px;
-    }
-  }
-
   > h3 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -40,6 +29,7 @@ export const Container = styled.div`
   > div:last-child {
     margin-top: 3rem;
     span {
+      font-size: 1.2rem;
       border-radius: 0.8rem;
       background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
       padding: 0.5rem 1.6rem;

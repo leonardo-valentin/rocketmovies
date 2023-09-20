@@ -16,7 +16,7 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.COLORS.PINK};
   }
 
-  > a {
+  > div {
     display: flex;
     gap: 1.5rem;
 
