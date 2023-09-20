@@ -46,6 +46,12 @@ export const Container = styled.header`
     }
   }
 
+  @media (max-width: 1024px) {
+    .input {
+      display: none;
+    }
+  }
+
   @media (max-width: 500px) {
     flex-direction: column;
     gap: 1rem;
