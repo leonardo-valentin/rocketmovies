@@ -39,4 +39,21 @@ export const Container = styled.div`
       margin-left: 0.8rem;
     }
   }
+
+  @media (max-width: 500px) {
+    height: 30rem;
+
+    > div:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      span {
+        width: fit-content;
+      }
+      > span + span {
+        margin: 0;
+      }
+    }
+  }
 `;

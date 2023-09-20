@@ -7,6 +7,7 @@ export function Home() {
   return (
     <Container>
       <Header />
+
       <section>
         <Movies>
           <h2>Meus Filmes</h2>
@@ -18,7 +19,7 @@ export function Home() {
         </Movies>
       </section>
 
-      <section>
+      <main>
         <Card
           data={{
             title: "Interestellar",
@@ -34,7 +35,82 @@ export function Home() {
             ],
           }}
         />
-      </section>
+        <Card
+          data={{
+            title: "Interestellar",
+            stars: 4,
+            description: `Pragas nas colheitas fizeram a civilização humana regredir para uma
+          sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da
+          NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de
+          Cooper, acredita que seu quarto está assombrado por um fantasma que`,
+            tags: [
+              { id: 1, name: "Ficção Científica" },
+              { id: 2, name: "Drama" },
+              { id: 3, name: "Família" },
+            ],
+          }}
+        />
+        <Card
+          data={{
+            title: "Interestellar",
+            stars: 4,
+            description: `Pragas nas colheitas fizeram a civilização humana regredir para uma
+          sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da
+          NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de
+          Cooper, acredita que seu quarto está assombrado por um fantasma que`,
+            tags: [
+              { id: 1, name: "Ficção Científica" },
+              { id: 2, name: "Drama" },
+              { id: 3, name: "Família" },
+            ],
+          }}
+        />
+        <Card
+          data={{
+            title: "Interestellar",
+            stars: 4,
+            description: `Pragas nas colheitas fizeram a civilização humana regredir para uma
+          sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da
+          NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de
+          Cooper, acredita que seu quarto está assombrado por um fantasma que`,
+            tags: [
+              { id: 1, name: "Ficção Científica" },
+              { id: 2, name: "Drama" },
+              { id: 3, name: "Família" },
+            ],
+          }}
+        />
+        <Card
+          data={{
+            title: "Interestellar",
+            stars: 4,
+            description: `Pragas nas colheitas fizeram a civilização humana regredir para uma
+          sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da
+          NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de
+          Cooper, acredita que seu quarto está assombrado por um fantasma que`,
+            tags: [
+              { id: 1, name: "Ficção Científica" },
+              { id: 2, name: "Drama" },
+              { id: 3, name: "Família" },
+            ],
+          }}
+        />
+        <Card
+          data={{
+            title: "Interestellar",
+            stars: 4,
+            description: `Pragas nas colheitas fizeram a civilização humana regredir para uma
+          sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da
+          NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de
+          Cooper, acredita que seu quarto está assombrado por um fantasma que`,
+            tags: [
+              { id: 1, name: "Ficção Científica" },
+              { id: 2, name: "Drama" },
+              { id: 3, name: "Família" },
+            ],
+          }}
+        />
+      </main>
     </Container>
   );
 }

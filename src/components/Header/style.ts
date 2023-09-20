@@ -45,19 +45,15 @@ export const Container = styled.header`
       height: 6.4rem;
     }
   }
-`;
 
-export const Search = styled.input`
-  width: 100%;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 1rem;
 
-  padding: 1.9rem 2.4rem;
-
-  border-radius: 1rem;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  border: none;
-  outline: none;
-
-  @media (max-width: 1000px) {
-    display: none;
+    > div {
+      div {
+        text-align: center;
+      }
+    }
   }
 `;
