@@ -14,6 +14,7 @@ type theme = {
     GRAY_300: string;
 
     PINK: string;
+    PINKPROFILE: string;
   };
 };
 
@@ -33,5 +34,6 @@ export const theme: theme = {
     GRAY_300: "#999591",
 
     PINK: "#FF859B",
+    PINKPROFILE: "rgba(255, 133, 155, 0.05)",
   },
 };
