@@ -55,12 +55,6 @@ export const Section = styled.div`
       margin-top: 1.6rem;
       margin-bottom: 4.2rem;
     }
-
-    a {
-      color: ${({ theme }) => theme.COLORS.PINK};
-      text-align: center;
-      font-size: 1.6rem;
-    }
   }
 
   .inputs {

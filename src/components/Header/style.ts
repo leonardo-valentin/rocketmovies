@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+  width: 100%;
   grid-area: header;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+
+  grid-template-columns: 16.5rem auto 22rem;
   align-items: center;
   gap: 6.4rem;
   padding: 2.4rem 12.3rem;
@@ -20,7 +22,7 @@ export const Container = styled.header`
     display: flex;
     gap: 1.5rem;
 
-    > div {
+    > .text {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,20 +48,23 @@ export const Container = styled.header`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 950px) {
     .input {
       display: none;
     }
+
+    grid-template-columns: auto auto;
+    justify-content: center;
   }
 
   @media (max-width: 500px) {
-    flex-direction: column;
     gap: 1rem;
+    text-align: center;
+    grid-template-columns: auto;
 
-    > div {
-      div {
-        text-align: center;
-      }
+    grid-template-rows: 7rem 7rem;
+    > .text {
+      text-align: center;
     }
   }
 `;

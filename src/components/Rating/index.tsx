@@ -3,9 +3,10 @@ import { VscStarFull, VscStarEmpty } from "react-icons/vsc";
 
 interface RatingProps {
   grade: number;
+  isbig?: boolean;
 }
 
-export function Rating({ grade }: RatingProps) {
+export function Rating({ grade, isbig = false }: RatingProps) {
   let stars = [];
   for (let cont = 1; cont <= 5; cont++) {
     if (cont <= grade) {
@@ -15,5 +16,9 @@ export function Rating({ grade }: RatingProps) {
     }
   }
 
-  return <Container>{stars}</Container>;
+  return isbig ? (
+    <Container itemProp="isbig">{stars}</Container>
+  ) : (
+    <Container>{stars}</Container>
+  );
 }

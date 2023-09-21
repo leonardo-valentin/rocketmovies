@@ -1,7 +1,7 @@
+import { LinkDiv } from "../../components/LinkDiv";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Container, Background, Section } from "./style";
-import { FiArrowLeft } from "react-icons/fi";
 
 export function SignUp() {
   return (
@@ -21,10 +21,9 @@ export function SignUp() {
           </div>
           <Button title="Cadastrar" />
 
-          <a href="/">
-            <FiArrowLeft />
+          <LinkDiv dir="/" icon="leftarrow">
             Voltar para o login
-          </a>
+          </LinkDiv>
         </div>
       </Section>
       <Background />

@@ -1,5 +1,6 @@
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { LinkDiv } from "../../components/LinkDiv";
 import { Container, Background, Section } from "./style";
 
 export function SignIn() {
@@ -19,7 +20,7 @@ export function SignIn() {
           </div>
           <Button title="Entrar" />
 
-          <a href="/register">Criar conta</a>
+          <LinkDiv dir="/register">Criar conta</LinkDiv>
         </div>
       </Section>
       <Background />

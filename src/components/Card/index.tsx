@@ -1,5 +1,6 @@
 import { Container } from "./style";
 import { Rating } from "../Rating";
+import { Tag } from "../Tag";
 
 export interface CardProps {
   data: {
@@ -18,11 +19,7 @@ export function Card({ data }: CardProps) {
       <Rating grade={data.stars} />
 
       <p>{data.description}</p>
-      <div>
-        {data.tags.map((tag) => (
-          <span key={tag.id}>{tag.name}</span>
-        ))}
-      </div>
+      <Tag tags={data.tags}></Tag>
     </Container>
   );
 }
