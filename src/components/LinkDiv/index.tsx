@@ -1,5 +1,6 @@
 import { Container } from "./style";
 import { FiArrowLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export function LinkDiv({
   dir,
@@ -12,10 +13,10 @@ export function LinkDiv({
 }) {
   return (
     <Container>
-      <a href={dir}>
+      <Link to={dir}>
         {icon === "leftarrow" ? <FiArrowLeft /> : ""}
         {children}
-      </a>
+      </Link>
     </Container>
   );
 }

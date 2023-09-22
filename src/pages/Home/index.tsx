@@ -2,6 +2,7 @@ import { Button } from "../../components/Button";
 import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { Container, Movies } from "./style";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -12,9 +13,9 @@ export function Home() {
         <Movies>
           <h2>Meus Filmes</h2>
           <div>
-            <a href="/new">
+            <Link to="/new">
               <Button title="Adicionar Filme" $icon={true} />
-            </a>
+            </Link>
           </div>
         </Movies>
       </section>
